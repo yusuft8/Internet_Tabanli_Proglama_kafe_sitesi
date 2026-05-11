@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Köşe Kafe — Rezervasyon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <header class="navbar">
+    <div class="logo">Köşe Kafe</div>
+    <nav>
+      <a href="index.html">Ana Sayfa</a>
+      <a href="menu.html">Menü</a>
+      <a href="hakkimizda.html">Hakkımızda</a>
+      <a href="rezervasyon.html" class="aktif">Rezervasyon</a>
+      <a href="iletisim.html">İletişim</a>
+    </nav>
+  </header>
+
+   <div class="sayfa-hero">
+    <h1>Rezervasyon</h1>
+    <p>Masanızı önceden ayırtın, sizi hazır bekleyelim</p>
+  </div>
+
+   <section class="rezervasyon-sayfa">
+    <div class="rezervasyon-wrapper">
+
+       <div class="rezervasyon-form-bolum">
+        <h2 class="form-baslik">Masa Rezervasyonu</h2>
+        <p class="form-aciklama">Aşağıdaki formu doldurun, 24 saat içinde size dönelim.</p>
+
+        <form action="#" method="post">
+
+          <div class="form-satir">
+            <div class="form-grup">
+              <label for="ad">Ad</label>
+              <input type="text" id="ad" name="ad" placeholder="Adınız" required>
+            </div>
+            <div class="form-grup">
+              <label for="soyad">Soyad</label>
+              <input type="text" id="soyad" name="soyad" placeholder="Soyadınız" required>
+            </div>
+          </div>
+
+          <div class="form-satir">
+            <div class="form-grup">
+              <label for="telefon">Telefon</label>
+              <input type="tel" id="telefon" name="telefon" placeholder="0 5__ ___ __ __" required>
+            </div>
+            <div class="form-grup">
+              <label for="eposta">E-posta</label>
+              <input type="email" id="eposta" name="eposta" placeholder="ornek@email.com" required>
+            </div>
+          </div>
+
+          <div class="form-satir">
+            <div class="form-grup">
+              <label for="tarih">Tarih</label>
+              <input type="date" id="tarih" name="tarih" required>
+            </div>
+            <div class="form-grup">
+              <label for="saat">Saat</label>
+              <select id="saat" name="saat" required>
+                <option value="">Saat seçin</option>
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+                <option value="19:00">19:00</option>
+                <option value="20:00">20:00</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-tek">
+            <div class="form-grup">
+              <label for="kisi">Kişi Sayısı</label>
+              <select id="kisi" name="kisi" required>
+                <option value="">Seçin</option>
+                <option value="1">1 Kişi</option>
+                <option value="2">2 Kişi</option>
+                <option value="3">3 Kişi</option>
+                <option value="4">4 Kişi</option>
+                <option value="5-6">5–6 Kişi</option>
+                <option value="7+">7 ve üzeri</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-tek">
+            <div class="form-grup">
+              <label for="istek">Özel İstek (İsteğe Bağlı)</label>
+              <textarea id="istek" name="istek" placeholder="Alerji, doğum günü süslemesi, masa tercihi gibi bilgileri buraya yazabilirsiniz..."></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn">Rezervasyonu Gönder</button>
+
+          <div class="basari-mesaji" id="basari">
+            ✅ Rezervasyon talebiniz alındı. En kısa sürede sizinle iletişime geçeceğiz.
+          </div>
+
+        </form>
+      </div>
+
+       <aside class="rezervasyon-bilgi">
+        <h3>Bilmeniz Gerekenler</h3>
+
+        <div class="bilgi-satir">
+          <div class="ikon">📍</div>
+          <p>
+            <strong>Adres</strong>
+            Karatay Mah. Köşe Sokak No:12, Konya
+          </p>
+        </div>
+
+        <div class="bilgi-satir">
+          <div class="ikon">🕐</div>
+          <p>
+            <strong>Çalışma Saatleri</strong>
+            Pazartesi – Cuma: 08:00 – 21:00<br>
+            Cumartesi – Pazar: 09:00 – 22:00
+          </p>
+        </div>
+
+        <div class="bilgi-satir">
+          <div class="ikon">📞</div>
+          <p>
+            <strong>Telefon</strong>
+            0 332 123 45 67
+          </p>
+        </div>
+
+        <div class="bilgi-satir">
+          <div class="ikon">📧</div>
+          <p>
+            <strong>E-posta</strong>
+            merhaba@kosekafe.com.tr
+          </p>
+        </div>
+
+        <div class="bilgi-satir">
+          <div class="ikon">ℹ️</div>
+          <p>
+            <strong>Rezervasyon Notu</strong>
+            Rezervasyonunuz teyit edilmeden geçerli sayılmaz. Geliş saatinden 15 dk önce iptal bildirimi bekliyoruz.
+          </p>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+ 
+</body>
+</html>

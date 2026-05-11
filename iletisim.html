@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Köşe Kafe — İletişim</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <header class="navbar">
+    <div class="logo">Köşe Kafe</div>
+    <nav>
+      <a href="index.html">Ana Sayfa</a>
+      <a href="menu.html">Menü</a>
+      <a href="hakkimizda.html">Hakkımızda</a>
+      <a href="rezervasyon.html">Rezervasyon</a>
+      <a href="iletisim.html" class="aktif">İletişim</a>
+    </nav>
+  </header>
+
+   <div class="sayfa-hero">
+    <h1>İletişim</h1>
+    <p>Soru, öneri veya merhaba demek için buradayız</p>
+  </div>
+
+   <section class="iletisim-sayfa">
+    <div class="iletisim-wrapper">
+
+       <div class="iletisim-sol">
+        <h2>Bize Ulaşın</h2>
+        <p>Aşağıdaki bilgilerden veya formu kullanarak bize yazabilirsiniz. En geç 1 iş günü içinde dönüş yaparız.</p>
+
+        <div class="bilgi-kutu">
+          <h4>📍 Adresimiz</h4>
+          <p>Karatay Mah. Köşe Sokak No:12<br>Karatay / Konya, 42000</p>
+        </div>
+
+        <div class="bilgi-kutu">
+          <h4>📞 Telefon</h4>
+          <p>0 332 123 45 67<br>0 555 987 65 43 (WhatsApp)</p>
+        </div>
+
+        <div class="bilgi-kutu">
+          <h4>📧 E-posta</h4>
+          <p>merhaba@kosekafe.com.tr<br>siparis@kosekafe.com.tr</p>
+        </div>
+
+        <div class="bilgi-kutu">
+          <h4>🕐 Çalışma Saatleri</h4>
+          <p>
+            Pazartesi – Cuma: 08:00 – 21:00<br>
+            Cumartesi – Pazar: 09:00 – 22:00
+          </p>
+        </div>
+
+      
+
+       <div class="iletisim-form">
+        <h3>Mesaj Gönderin</h3>
+        <p>Aklınızdaki her şeyi bize yazın.</p>
+
+        <form action="#" method="post">
+
+          <div class="form-satir">
+            <div class="form-grup">
+              <label for="ad-i">Ad</label>
+              <input type="text" id="ad-i" name="ad" placeholder="Adınız" required>
+            </div>
+            <div class="form-grup">
+              <label for="soyad-i">Soyad</label>
+              <input type="text" id="soyad-i" name="soyad" placeholder="Soyadınız" required>
+            </div>
+          </div>
+
+          <div class="form-tek">
+            <div class="form-grup">
+              <label for="eposta-i">E-posta</label>
+              <input type="email" id="eposta-i" name="eposta" placeholder="ornek@email.com" required>
+            </div>
+          </div>
+
+          <div class="form-tek">
+            <div class="form-grup">
+              <label for="konu">Konu</label>
+              <select id="konu" name="konu" required>
+                <option value="">Konu seçin</option>
+                <option value="genel">Genel Bilgi</option>
+                <option value="rezervasyon">Rezervasyon</option>
+                <option value="sikayet">Şikayet / Geri Bildirim</option>
+                <option value="isbirligi">İşbirliği</option>
+                <option value="diger">Diğer</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-tek">
+            <div class="form-grup">
+              <label for="mesaj">Mesajınız</label>
+              <textarea id="mesaj" name="mesaj" placeholder="Bize ne söylemek istersiniz?" style="min-height: 140px;" required></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn">Mesajı Gönder</button>
+
+          <div class="basari-mesaji" id="basari-iletisim">
+            ✅ Mesajınız iletildi. En kısa sürede size döneceğiz.
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+ 
+</body>
+</html>
