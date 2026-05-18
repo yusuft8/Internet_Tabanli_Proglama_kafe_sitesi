@@ -1,6 +1,6 @@
 # ☕ Köşe Kafe — Web Sitesi
 
-Bir kafe için tasarlanmış çok sayfalı tanıtım sitesi. Saf HTML ve CSS kullanılarak geliştirilmiştir, hiçbir JavaScript veya harici kütüphane kullanılmamıştır.
+Bir kafe için tasarlanmış çok sayfalı tanıtım sitesi. 
 
 ---
 
